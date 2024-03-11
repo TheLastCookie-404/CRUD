@@ -34,9 +34,8 @@
                         <a href="handler/delete.php?id=<?= $elems[0] ?>">
                             <span class="delete">×</span>
                         </a>
-                        <a href="handler/update.php?id=<?= $elems[0] ?>">
-                            <span class="edit">✎</span>
-                        </a>
+                        <span class="edit">✎</span>
+
                     </div>
                 <? } ?>
             </div>
