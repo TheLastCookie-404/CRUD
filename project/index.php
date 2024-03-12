@@ -3,7 +3,6 @@
     $crud = mysqli_query($db,"SELECT * FROM `crud`");
     $crud = mysqli_fetch_all($crud);
 
-    
 ?>
 
 <!DOCTYPE html>
@@ -12,7 +11,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
-        <link rel="stylesheet" href="styles/main.css?=v22">
+        <link rel="stylesheet" href="styles/main.css?=v23">
     </head>
     <body>
         <div class="wrapper">
@@ -22,7 +21,7 @@
                     <a href="handler\deleteAll.php"><div class="delete">× ALL</div></a>
                 </div>
                 <form id="form1" action="handler\loader.php" method="post">
-                    <input class="form-input field" type="text" name="field">
+                    <input id="input1" class="form-input field" placeholder="Введи что-то" name="field">
                     <input class="form-input button" type="submit" value="Нажми на меня!">
                 </form>
             </div>
@@ -34,8 +33,7 @@
                         <a href="handler/delete.php?id=<?= $elems[0] ?>">
                             <span class="delete">×</span>
                         </a>
-                        <span class="edit" onclick="ChangeAction('form1', <?= $elems[0] ?>);">✎</span>
-
+                        <span class="edit" onclick="ChangeAction('form1', 'input1', <?= $elems[0] ?>);">✎</span>
                     </div>
                 <? } ?>
             </div>

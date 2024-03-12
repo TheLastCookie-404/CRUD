@@ -2,7 +2,8 @@
     require('../config/connect.php');
     $content = $_POST['field'];
     
-    if ($content != null){
+    if ($content != null)
+    {
         mysqli_query($db,"INSERT INTO `crud` (`content`) VALUES ('$content')");
     }
 
