@@ -21,7 +21,7 @@
                     <div class="enterTxt">Введите что-нибудь</div>
                     <a href="handler\deleteAll.php"><div class="delete">× ALL</div></a>
                 </div>
-                <form action="handler\loader.php" method="post">
+                <form id="form1" action="handler\loader.php" method="post">
                     <input class="form-input field" type="text" name="field">
                     <input class="form-input button" type="submit" value="Нажми на меня!">
                 </form>
@@ -34,7 +34,7 @@
                         <a href="handler/delete.php?id=<?= $elems[0] ?>">
                             <span class="delete">×</span>
                         </a>
-                        <span class="edit">✎</span>
+                        <span class="edit" onclick="ChangeAction('form1', <?= $elems[0] ?>);">✎</span>
 
                     </div>
                 <? } ?>
@@ -46,6 +46,7 @@
                 var_dump($crud);
             echo "</pre>";
         ?> -->
+        <script src="scripts/update.js"></script>
     </body>
 
 </html>
