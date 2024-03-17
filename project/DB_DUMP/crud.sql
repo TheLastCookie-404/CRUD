@@ -29,7 +29,7 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `crud` (
   `Id` int(11) NOT NULL,
-  `content` varchar(11) NOT NULL
+  `content` varchar(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
