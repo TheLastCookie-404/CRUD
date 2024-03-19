@@ -3,8 +3,8 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Мар 08 2024 г., 18:51
--- Версия сервера: 5.7.39
+-- Время создания: Мар 14 2024 г., 11:09
+-- Версия сервера: 8.0.30
 -- Версия PHP: 7.2.34
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
@@ -50,7 +50,7 @@ ALTER TABLE `crud`
 -- AUTO_INCREMENT для таблицы `crud`
 --
 ALTER TABLE `crud`
-  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `Id` int NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
